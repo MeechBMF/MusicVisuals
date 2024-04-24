@@ -12,7 +12,7 @@ public class Terrain extends MichaelsVisuals {
 
     // Sun variables
     float sunX, sunY, sunZ; // Position of the sun
-    float sunRadius = 100; // Radius of the sun
+    float sunRadius = 300; // Radius of the sun
 
     public void settings() {
         size(600, 600, P3D);
@@ -54,7 +54,7 @@ public class Terrain extends MichaelsVisuals {
 
     // Method to draw the terrain
     void drawTerrain() {
-        stroke(160, 32, 240);
+        stroke(0, 0, 128);
         noFill();
         translate(width / 2, height / 2);
         rotateX(PI / 3);
