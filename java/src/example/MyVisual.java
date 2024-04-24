@@ -1,6 +1,6 @@
 package example;
 
-import ie.tudublin.*;
+import ie.tudublin.Visual;
 
 public class MyVisual extends Visual {
     WaveForm wf;
