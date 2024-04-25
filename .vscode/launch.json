@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Blob",
+            "request": "launch",
+            "mainClass": "c22439572.Blob",
+            "projectName": "java"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Main",
             "request": "launch",
             "mainClass": "ie.tudublin.Main",
