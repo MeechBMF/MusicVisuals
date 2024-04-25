@@ -15,13 +15,14 @@ public class Starfield extends MichaelsVisuals {
 
     public void draw() {
         background(20);
-        stroke(255);
-        strokeWeight(5);
 
         translate(width/2, height/2);
         for (int i = 0; i < NUM_LINES; i++) {
-            line(x1(t - i), y1(t - i), x2(t - i), y2(t - i)); // Existing line going opposite direction
-            line(x3(t + i), y3(t + i), x4(t + i), y4(t + i)); // New line going opposite direction
+            stroke(255, 0, 0); // Red color for the existing line
+            line(x1(t - i), y1(t - i), x2(t - i), y2(t - i));
+
+            stroke(0, 255, 0); // Green color for the new line
+            line(x3(t + i), y3(t + i), x4(t + i), y4(t + i));
         }
         t++;
     }
@@ -45,18 +46,18 @@ public class Starfield extends MichaelsVisuals {
 
     // New line functions going opposite direction
     float x3(float t){
-        return cos(t / 10) * 100 + cos(t / 5) * 20; // Change here to t
+        return cos(t / 10) * 100 + cos(t / 5) * 20;
     }
 
     float y3(float t){
-        return sin(t / 10) * 100; // Change here to t
+        return sin(t / 10) * 100;
     }
 
     float x4(float t){
-        return cos(t / 10) * 200 + cos(t) * 2; // Change here to t
+        return cos(t / 10) * 200 + cos(t) * 2;
     }
 
     float y4(float t){
-        return sin(t / 20) * 200 + sin(t / 12) * 20; // Change here to t
+        return sin(t / 20) * 200 + sin(t / 12) * 20;
     }
 }
